@@ -15,8 +15,6 @@ def step_impl(context):
 @given('I type wrong data')
 def step_impl(context):
     context.browser.get("https://cabinet.ssau.ru/login")
-    title = context.browser.title
-    assert "Личный кабинет" in title
 
 @then('I see error message')
 def step_impl(context):
